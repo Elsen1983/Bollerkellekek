@@ -13,11 +13,16 @@ Common breakpoints for media queries
 
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap'); */
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Yanone+Kaffeesatz:wght@500&display=swap');
+
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: rgb(157, 14, 24);
@@ -245,9 +250,6 @@ header {
 
 .menu li a {
   font-size: 1.25em;
-  font-family: "Varela Round", sans-serif;
-  font-family: 'Aclonica', sans-serif;
-  font-family: 'Limelight', cursive;
   font-family: 'Cinzel', serif;
   /* font-family: 'Yanone Kaffeesatz', sans-serif; */
   color: rgb(120, 0, 0);
@@ -499,7 +501,7 @@ main {
 
 .module {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
-    url(/img/kitchen-knife-concrete-wooden-board.jpg);
+    url(../img/kitchen-knife-concrete-wooden-board.jpg);
   background-size: auto, auto;
   background-size: cover;
   width: 100%;
@@ -524,6 +526,7 @@ main {
   padding-right: 20%;
   line-height: 1.5rem;
   text-align: center;
+  text-shadow: 5px 3px 5px rgba(0,0,0,0.51);
 }
 
 
@@ -607,14 +610,15 @@ img {
   background-size: cover;
   /* border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem; */
+  border: 2px rgba(240, 83, 83, 0.74) solid;
   border-radius: 0.25rem;
   filter: contrast(70%);
   overflow: hidden;
   position: relative;
   transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
   box-shadow: 1px 2px 10px 2px rgba(255, 3, 21, 0.6);
--webkit-box-shadow: 1px 2px 10px 2px rgba(255, 3, 21, 0.6);
--moz-box-shadow: 1px 2px 10px 2px rgba(255, 3, 21, 0.6);
+  -webkit-box-shadow: 1px 2px 10px 2px rgba(255, 3, 21, 0.6);
+  -moz-box-shadow: 1px 2px 10px 2px rgba(255, 3, 21, 0.6);
 }
 .card__image::before {
   content: "";
@@ -630,14 +634,16 @@ img {
   background-image: url(../img/selectedImages/0001.jpg);
 }
 .card__image--aktualis {
-  background-image: url(../img/selectedImages/0001.jpg);
+  background-image: url(../img/selectedImages/aktualitasaink.jpg);
 }
 .card__image--keptar {
-  background-image: url(../img/selectedImages/0001.jpg);
+  background-image: url(../img/selectedImages/keptar.jpg);
 }
 .card__image--cegunkrol {
-  background-image: url(../img/selectedImages/0001.jpg);
-  border: 2px white solid;
+  background-image: url(../img/selectedImages/cegunkrol.png);
+}
+.card__image--elehetosegek{
+  background-image: url(../img/selectedImages/elerhetoseg.jpg);
 }
 .card__title {
   /* color: #696969; */
@@ -654,41 +660,34 @@ img {
 }
 .card__text {
   flex: 1 1 auto;
-  font-size: 0.875rem;
+  /* font-size: 0.875rem; */
   line-height: 1.5;
   margin-bottom: 1.25rem;
-  text-align: justify;
-  font-weight: bold;
+  text-align: center;
+  /* font-weight: bold; */
+  font-family: "Varela Round", sans-serif;
+  letter-spacing: 1px;
+  padding: 0 10px 0 10px;
 }
-
-
 
 #myBtn {
   display: none;
   position: fixed;
   bottom: 10px;
   right: 10px;
+  width: 50px;
   z-index: 99;
   font-size: 1.25em;
-  border: none;
-  outline: none;
-  background-color: rgba(253, 240, 213);
-  color: rgb(65, 63, 63);
   cursor: pointer;
-  border-radius: 2px;
-  border: 1px black solid;
-  font-weight: bolder;
-  line-height: 15px;
-  padding: 2px 5px 2px 5px;
-}
-#myBtn span{
-  font-size: 0.65em;
-  font-weight: normal;
 }
 
 #myBtn:hover {
   background-color: #555;
 }
+
+
+
+
 
 
 /****************
